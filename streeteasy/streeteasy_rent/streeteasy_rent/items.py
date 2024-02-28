@@ -12,10 +12,20 @@ class StreeteasyRentItem:
     # define the fields for your item here like:
     # name = scrapy.Field()
     title: str
-    area: int
-    rooms_number: int
+    price: str
+    area: Optional[int]
+    rooms_number: Optional[int]
     beds_number: Optional[int]
     baths_number: Optional[int]
     amenities: list[str]
     listing_link: str
-    neighbourhood: str
+    neighbourhood: list[str]
+    days_on_market: str
+
+
+@dataclass
+class ApartmentDetails:
+    area: Optional[int]
+    rooms_number: Optional[int]
+    beds_number: Optional[int]
+    baths_number: Optional[int]

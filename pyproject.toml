@@ -12,6 +12,10 @@ pyspark = "^3.5.0"
 pandas = "^2.2.0"
 numpy = "^1.26.4"
 scrapy = "^2.11.1"
+scrapy-fake-useragent = "^1.4.4"
+avro = "^1.11.3"
+py4j = "^0.10.9.7"
+jupyter = "^1.0.0"
 
 
 [build-system]

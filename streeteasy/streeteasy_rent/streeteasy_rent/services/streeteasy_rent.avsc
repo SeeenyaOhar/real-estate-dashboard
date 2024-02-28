@@ -1,0 +1,70 @@
+{
+    "namespace": "realEstateDashboard",
+    "type": "record",
+    "name": "StreeteasyRent",
+    "fields": [
+        {
+            "name": "title",
+            "type": "string"
+        },
+        {
+            "name": "price",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "area",
+            "type": [
+                "int",
+                "null"
+            ]
+        },
+        {
+            "name": "rooms_number",
+            "type": [
+                "int",
+                "null"
+            ]
+        },
+        {
+            "name": "beds_number",
+            "type": [
+                "int",
+                "null"
+            ]
+        },
+        {
+            "name": "baths_number",
+            "type": [
+                "int",
+                "null"
+            ]
+        },
+        {
+            "name": "amenities",
+            "type": {
+                "type": "array",
+                "items": "string",
+                "default": []
+            }
+        },
+        {
+            "name": "listing_link",
+            "type": "string"
+        },
+        {
+            "name": "neighbourhood",
+            "type": {
+                "type": "array",
+                "items": "string",
+                "default": []
+            }
+        },
+        {
+            "name": "days_on_market",
+            "type": ["string", "null"]
+        }
+    ]
+}
