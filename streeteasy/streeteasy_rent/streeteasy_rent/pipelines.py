@@ -7,7 +7,11 @@
 # useful for handling different item types with a single interface
 from itemadapter import ItemAdapter
 
+from .services.kafka_producer import StreeteasyRentProducer
+
 
 class StreeteasyRentPipeline:
+    producer = StreeteasyRentProducer()
     def process_item(self, item, spider):
+        self.producer.send_rent(item)
         return item
